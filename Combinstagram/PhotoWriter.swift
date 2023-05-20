@@ -4,7 +4,7 @@
 //
 //  Created by bjke on 2023/5/20.
 //
-
+import Foundation
 import Photos
 import RxSwift
 import UIKit
@@ -14,8 +14,8 @@ class PhotoWriter {
     case couldNotSavePhoto
   }
 
-  static func save(_ image: UIImage) -> Observable<String> {
-    return Observable.create({ observer in
+  static func save(_ image: UIImage) -> Single<String> {
+    return Single.create { observer in
       var savedAssetId: String?
       PHPhotoLibrary.shared().performChanges({
         let request = PHAssetChangeRequest.creationRequestForAsset(from: image)
@@ -23,14 +23,13 @@ class PhotoWriter {
       }, completionHandler: { success, error in
         DispatchQueue.main.async {
           if success, let id = savedAssetId {
-            observer.onNext(id)
-            observer.onCompleted()
+            observer(.success(id))
           } else {
-            observer.onError(error ?? Errors.couldNotSavePhoto)
+            observer(.failure(error ?? Errors.couldNotSavePhoto))
           }
         }
       })
       return Disposables.create()
-    })
+    }
   }
 }

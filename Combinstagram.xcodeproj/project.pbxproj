@@ -25,6 +25,7 @@
 		0AFFEDFC2A189C990011240B /* PhotoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFEDFB2A189C990011240B /* PhotoWriter.swift */; };
 		0AFFEDFE2A189CC90011240B /* UIImage+Collage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFEDFD2A189CC90011240B /* UIImage+Collage.swift */; };
 		0AFFEE002A189D180011240B /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFEDFF2A189D180011240B /* PhotosViewController.swift */; };
+		0AFFEE022A19183E0011240B /* UIViewController+rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFEE012A19183E0011240B /* UIViewController+rx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,7 @@
 		0AFFEDFB2A189C990011240B /* PhotoWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWriter.swift; sourceTree = "<group>"; };
 		0AFFEDFD2A189CC90011240B /* UIImage+Collage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Collage.swift"; sourceTree = "<group>"; };
 		0AFFEDFF2A189D180011240B /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		0AFFEE012A19183E0011240B /* UIViewController+rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+rx.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				0AFFEDFB2A189C990011240B /* PhotoWriter.swift */,
 				0AFFEDD62A1894740011240B /* SceneDelegate.swift */,
 				0AFFEDFD2A189CC90011240B /* UIImage+Collage.swift */,
+				0AFFEE012A19183E0011240B /* UIViewController+rx.swift */,
 			);
 			path = Combinstagram;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				0AFFEDD52A1894740011240B /* AppDelegate.swift in Sources */,
 				0AFFEE002A189D180011240B /* PhotosViewController.swift in Sources */,
 				0AFFEDD72A1894740011240B /* SceneDelegate.swift in Sources */,
+				0AFFEE022A19183E0011240B /* UIViewController+rx.swift in Sources */,
 				0AFFEDFA2A189C4B0011240B /* PhotoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
