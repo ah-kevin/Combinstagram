@@ -5,14 +5,20 @@
 //  Created by bjke on 2023/5/20.
 //
 
-import UIKit
 import Photos
+import RxSwift
+import UIKit
 
 class PhotosViewController: UICollectionViewController {
+  private let selectedPhotosSubject = PublishSubject<UIImage>()
+  var selectedPhotos: Observable<UIImage> {
+    return selectedPhotosSubject.asObservable()
+  }
 
   // MARK: public properties
 
   // MARK: private properties
+
   private lazy var photos = PhotosViewController.loadPhotos()
   private lazy var imageManager = PHCachingImageManager()
 
@@ -29,14 +35,14 @@ class PhotosViewController: UICollectionViewController {
   }
 
   // MARK: View Controller
+
   override func viewDidLoad() {
     super.viewDidLoad()
-
   }
 
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
-
+    selectedPhotosSubject.onCompleted()
   }
 
   // MARK: UICollectionView
@@ -46,7 +52,6 @@ class PhotosViewController: UICollectionViewController {
   }
 
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
     let asset = photos.object(at: indexPath.item)
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! PhotoCell
 
@@ -69,7 +74,9 @@ class PhotosViewController: UICollectionViewController {
 
     imageManager.requestImage(for: asset, targetSize: view.frame.size, contentMode: .aspectFill, options: nil, resultHandler: { [weak self] image, info in
       guard let image = image, let info = info else { return }
-    
+      if let isThumbnail = info[PHImageResultIsDegradedKey as NSString] as? Bool, !isThumbnail {
+        self?.selectedPhotosSubject.onNext(image)
+      }
     })
   }
 }
