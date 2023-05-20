@@ -9,21 +9,59 @@
 /* Begin PBXBuildFile section */
 		0AFFEDD52A1894740011240B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFEDD42A1894740011240B /* AppDelegate.swift */; };
 		0AFFEDD72A1894740011240B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFEDD62A1894740011240B /* SceneDelegate.swift */; };
-		0AFFEDD92A1894740011240B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFEDD82A1894740011240B /* ViewController.swift */; };
+		0AFFEDD92A1894740011240B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFEDD82A1894740011240B /* MainViewController.swift */; };
 		0AFFEDDC2A1894740011240B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFFEDDA2A1894740011240B /* Main.storyboard */; };
 		0AFFEDDE2A1894740011240B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFFEDDD2A1894740011240B /* Assets.xcassets */; };
 		0AFFEDE12A1894740011240B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFFEDDF2A1894740011240B /* LaunchScreen.storyboard */; };
+		0AFFEDEE2A18961B0011240B /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFEDE92A18961A0011240B /* RxCocoa.xcframework */; };
+		0AFFEDEF2A18961B0011240B /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFEDE92A18961A0011240B /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AFFEDF22A18961B0011240B /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFEDEB2A18961A0011240B /* RxRelay.xcframework */; };
+		0AFFEDF32A18961B0011240B /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFEDEB2A18961A0011240B /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AFFEDF42A18961B0011240B /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFEDEC2A18961A0011240B /* RxSwift.xcframework */; };
+		0AFFEDF52A18961B0011240B /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFEDEC2A18961A0011240B /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AFFEDF62A18961B0011240B /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFEDED2A18961B0011240B /* RxBlocking.xcframework */; };
+		0AFFEDF72A18961B0011240B /* RxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFEDED2A18961B0011240B /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AFFEDFA2A189C4B0011240B /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFEDF92A189C4B0011240B /* PhotoCell.swift */; };
+		0AFFEDFC2A189C990011240B /* PhotoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFEDFB2A189C990011240B /* PhotoWriter.swift */; };
+		0AFFEDFE2A189CC90011240B /* UIImage+Collage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFEDFD2A189CC90011240B /* UIImage+Collage.swift */; };
+		0AFFEE002A189D180011240B /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFEDFF2A189D180011240B /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AFFEDF82A18961B0011240B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AFFEDF32A18961B0011240B /* RxRelay.xcframework in Embed Frameworks */,
+				0AFFEDF52A18961B0011240B /* RxSwift.xcframework in Embed Frameworks */,
+				0AFFEDEF2A18961B0011240B /* RxCocoa.xcframework in Embed Frameworks */,
+				0AFFEDF72A18961B0011240B /* RxBlocking.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0AFFEDD12A1894740011240B /* Combinstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Combinstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFFEDD42A1894740011240B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AFFEDD62A1894740011240B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0AFFEDD82A1894740011240B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0AFFEDD82A1894740011240B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0AFFEDDB2A1894740011240B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AFFEDDD2A1894740011240B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AFFEDE02A1894740011240B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AFFEDE22A1894740011240B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AFFEDE92A18961A0011240B /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
+		0AFFEDEA2A18961A0011240B /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxTest.xcframework; path = Carthage/Build/RxTest.xcframework; sourceTree = "<group>"; };
+		0AFFEDEB2A18961A0011240B /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxRelay.xcframework; path = Carthage/Build/RxRelay.xcframework; sourceTree = "<group>"; };
+		0AFFEDEC2A18961A0011240B /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
+		0AFFEDED2A18961B0011240B /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxBlocking.xcframework; path = Carthage/Build/RxBlocking.xcframework; sourceTree = "<group>"; };
+		0AFFEDF92A189C4B0011240B /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		0AFFEDFB2A189C990011240B /* PhotoWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWriter.swift; sourceTree = "<group>"; };
+		0AFFEDFD2A189CC90011240B /* UIImage+Collage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Collage.swift"; sourceTree = "<group>"; };
+		0AFFEDFF2A189D180011240B /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +69,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AFFEDF22A18961B0011240B /* RxRelay.xcframework in Frameworks */,
+				0AFFEDF42A18961B0011240B /* RxSwift.xcframework in Frameworks */,
+				0AFFEDEE2A18961B0011240B /* RxCocoa.xcframework in Frameworks */,
+				0AFFEDF62A18961B0011240B /* RxBlocking.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +84,7 @@
 			children = (
 				0AFFEDD32A1894740011240B /* Combinstagram */,
 				0AFFEDD22A1894740011240B /* Products */,
+				0AFFEDE82A18961A0011240B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +100,30 @@
 			isa = PBXGroup;
 			children = (
 				0AFFEDD42A1894740011240B /* AppDelegate.swift */,
-				0AFFEDD62A1894740011240B /* SceneDelegate.swift */,
-				0AFFEDD82A1894740011240B /* ViewController.swift */,
-				0AFFEDDA2A1894740011240B /* Main.storyboard */,
 				0AFFEDDD2A1894740011240B /* Assets.xcassets */,
-				0AFFEDDF2A1894740011240B /* LaunchScreen.storyboard */,
 				0AFFEDE22A1894740011240B /* Info.plist */,
+				0AFFEDDF2A1894740011240B /* LaunchScreen.storyboard */,
+				0AFFEDDA2A1894740011240B /* Main.storyboard */,
+				0AFFEDD82A1894740011240B /* MainViewController.swift */,
+				0AFFEDF92A189C4B0011240B /* PhotoCell.swift */,
+				0AFFEDFF2A189D180011240B /* PhotosViewController.swift */,
+				0AFFEDFB2A189C990011240B /* PhotoWriter.swift */,
+				0AFFEDD62A1894740011240B /* SceneDelegate.swift */,
+				0AFFEDFD2A189CC90011240B /* UIImage+Collage.swift */,
 			);
 			path = Combinstagram;
+			sourceTree = "<group>";
+		};
+		0AFFEDE82A18961A0011240B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AFFEDED2A18961B0011240B /* RxBlocking.xcframework */,
+				0AFFEDE92A18961A0011240B /* RxCocoa.xcframework */,
+				0AFFEDEB2A18961A0011240B /* RxRelay.xcframework */,
+				0AFFEDEC2A18961A0011240B /* RxSwift.xcframework */,
+				0AFFEDEA2A18961A0011240B /* RxTest.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +136,7 @@
 				0AFFEDCD2A1894740011240B /* Sources */,
 				0AFFEDCE2A1894740011240B /* Frameworks */,
 				0AFFEDCF2A1894740011240B /* Resources */,
+				0AFFEDF82A18961B0011240B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,9 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AFFEDD92A1894740011240B /* ViewController.swift in Sources */,
+				0AFFEDFC2A189C990011240B /* PhotoWriter.swift in Sources */,
+				0AFFEDFE2A189CC90011240B /* UIImage+Collage.swift in Sources */,
+				0AFFEDD92A1894740011240B /* MainViewController.swift in Sources */,
 				0AFFEDD52A1894740011240B /* AppDelegate.swift in Sources */,
+				0AFFEE002A189D180011240B /* PhotosViewController.swift in Sources */,
 				0AFFEDD72A1894740011240B /* SceneDelegate.swift in Sources */,
+				0AFFEDFA2A189C4B0011240B /* PhotoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,9 +366,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bjke.Combinstagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +397,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bjke.Combinstagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
